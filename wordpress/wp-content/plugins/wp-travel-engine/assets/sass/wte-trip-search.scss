@@ -1,0 +1,330 @@
+@import "./old-style";
+
+.category-trips-single{
+    margin-bottom: 32px;
+    .category-trips-single-inner-wrap{
+        box-shadow: 0 4px 8px rgba(#000, .04);
+        border-radius: 4px;
+        background-color: #fff;
+        padding: 24px;
+        .category-trip-viewmre-btn{
+            display: block;
+            text-align: center;
+            padding: 15px;
+            letter-spacing: normal;
+            text-transform: none;
+            font-size: 16px;
+            line-height: 1;
+            font-weight: 500;
+            appearance: none;
+            border-radius: 4px;
+            box-shadow: 0px 3px 2px rgba(#000, .09);
+            transition: all ease 0.3s;
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: #fff;
+        }
+        .category-trip-fig{
+            order: unset;
+            > a{
+                display: block;
+                padding-top: 75%;
+                border-radius: 4px;
+                overflow: hidden;
+                background-color: #efefef;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        .category-trip-content-wrap{
+            padding-top: 24px;
+        }
+        .category-feat-ribbon{
+            transform: unset;
+            margin-top: 8px;
+            margin-left: 8px;
+            right: auto;
+            left: 0;
+            top: 0;
+            .category-feat-ribbon-txt{
+                font-size: .66em;
+                line-height: 1;
+                font-weight: 600;
+                font-style: normal;
+                height: auto;
+                width: auto;
+                padding: 5px 10px;
+                border-radius: 15px;
+                background-color: #FFC34E;
+                color: #8C6B2B;
+                display: inline-flex;
+                align-items: center;
+                &::before{
+                    content: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M13.8081 4.62308C13.6427 4.48191 13.4093 4.45216 13.2137 4.54737L10.2211 6.00424L7.41314 2.76669C7.30929 2.64692 7.15855 2.57812 7.00001 2.57812C6.84147 2.57812 6.69075 2.64692 6.58687 2.76669L3.77888 6.00421L0.786276 4.54734C0.590686 4.45216 0.357334 4.48188 0.191904 4.62305C0.0264748 4.76423 -0.0395877 4.99004 0.0236584 5.19812L2.10178 12.0341C2.17181 12.2644 2.38424 12.4219 2.62501 12.4219H11.375C11.6157 12.4219 11.8282 12.2644 11.8982 12.0341L13.9763 5.19815C14.0396 4.99006 13.9735 4.76426 13.8081 4.62308ZM10.9696 11.3281H3.03032L1.43479 6.07955L3.67758 7.17141C3.90026 7.2798 4.16785 7.22506 4.33008 7.03803L7.00001 3.95967L9.66996 7.03803C9.83216 7.22509 10.0998 7.27977 10.3224 7.17141L12.5652 6.07955L10.9696 11.3281Z' fill='%238C6B2B'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='14' height='14' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                    width: 14px;
+                    height: 14px;
+                    display: inline-block;
+                    margin-right: 6px;
+                    position: static;
+                    border: none;
+                }
+                &::after{
+                    content: none;
+                }
+            }
+            .cat-feat-shadow{
+                display: none;
+            }
+        }
+        .category-trip-review{
+            display: flex;
+            align-items: center;
+            .jq-ry-group-wrapper{
+                position: relative;
+                svg{
+                    width: 15px;
+                    height: 15px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+                .jq-ry-rated-group{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+            .category-trip-reviewcount{
+                font-size: .77em;
+                line-height: 1;
+                opacity: .4;
+                color: #000;
+                margin-left: 8px;
+                text-decoration: underline;
+            }
+        }
+        .category-trip-discount{
+            display: inline-block;
+            font-size: .72em;
+            font-weight: 600;
+            line-height: 1;
+            padding: 5px 10px;
+            border-radius: 14px;
+            background-color: #EA7810;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+        .price-holder{
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            .striked-price{
+                text-decoration: line-through;
+                font-size: .88em;
+                opacity: .4;
+            }
+            .actual-price{
+                font-size: 32px;
+                line-height: 1;
+                font-weight: 600;
+            }
+        }
+        .category-trip-prc-title-wrap{
+            margin-bottom: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            .category-trip-title{
+                font-size: 24px;
+                order: unset;
+                padding: 0;
+            }
+        }
+        .category-trip-detail-wrap{
+            padding: 0;
+            width: 100%;
+            .category-trip-prc-wrap{
+                display: flex;
+                flex-wrap: wrap;
+                @media(min-width: 1200px){
+                    flex-wrap: nowrap;
+                }
+                > *{
+                    margin-bottom: 24px;
+                }
+            }
+            .category-trip-budget{
+                padding-left: 24px;
+                border-left: 1px solid rgba(#001427, .15);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .category-trip-desti{
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                padding-right: 24px;
+                justify-content: center;
+                >[class*="category-trip-"]{
+                    display: inline-flex;
+                    align-items: center;
+                    margin-right: 0;
+                    font-size: 14px;
+                    &:not(:last-child){
+                        margin-bottom: 12px;
+                    }
+                    i{
+                        width: 14px;
+                        height: 16px;
+                        text-align: center;
+                        margin-right: 10px;
+                    }
+                    span{
+                        line-height: 1.2;
+                        font-weight: normal;
+                        color: rgba(#000, .6);
+                    }
+                }
+            }
+            .category-trip-desc{
+                margin-top: 0px;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+        .category-trip-aval-time{
+            padding: 0;
+            margin-top: 32px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(#000, .1);
+            .category-available-trip-text{
+                font-size: 14px;
+                line-height: 1;
+                color: rgba(#000, .4);
+                font-style: normal;
+                margin: 0;
+            }
+            .category-trip-avl-tip-inner-wrap{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0;
+                .category-available-months{
+                    margin-left: 0;
+                    li{
+                        font-size: .66em;
+                        margin: 0;
+                        margin-right: 8px;
+                    }
+                    .disabled{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .next-trip-info{
+            .fsd-title{
+                font-size: 14px;
+                line-height: 1;
+                color: rgba(#000, .4);
+            }
+        }
+    }
+}
+
+.category-list{
+    .category-trips-single{
+        .category-trips-single-inner-wrap{
+            padding: 32px 24px 24px;
+            .category-trip-viewmre-btn{
+                display: inline-flex;
+            }
+            .category-trip-fig{
+                @media(min-width: 768px){
+                    flex: 0 0 40%;
+                    max-width: 40%;
+                }
+            }
+            .category-trip-content-wrap{
+                @media(min-width: 768px){
+                    flex: 0 0 60%;
+                    max-width: 60%;
+                    padding-left: 24px;
+                    padding-top: 0;
+                }
+            }
+            .category-trip-detail-wrap{
+                .category-trip-budget{
+                    @media(min-width: 1200px){
+                        padding-left: 48px;
+                    }
+                }
+                .category-trip-desti{
+                    @media(min-width: 1200px){
+                        padding-right: 48px;
+                    }
+                }
+            }
+            .category-trip-aval-time{
+                .category-trip-avl-tip-inner-wrap{
+                    .category-available-months{
+                        li{
+                            font-size: .722em;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.advanced-search-wrapper{
+    .sidebar{
+        padding: 24px 16px;
+        border: 1px solid rgba(#000, .03);
+        background-color: #fff;
+    }
+}
+
+.wp-travel-toolbar{
+    padding: 24px 0;
+    margin-bottom: 24px;
+    .wp-travel-engine-toolbar{
+        &.wte-filterby-dropdown{
+            .wte-ordering{
+                span{
+                    opacity: .5;
+                }
+                select{
+                    padding: 0;
+                    padding-right: 15px;
+                    background-color: transparent;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #000;
+                }
+            }
+        }
+    }
+    .wte-filter-foundposts{
+        .searchFoundPosts{
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    .wte-view-modes{
+        >span{
+            display: none;
+        }
+    }
+}
